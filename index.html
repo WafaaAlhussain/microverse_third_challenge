@@ -21,7 +21,41 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>Hello World!</h1>
+    <div id="main">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br>
+        <label id="email-label" for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        <br>
+        <label id="number-label" for="number">Age <span>(optional)</span></label>
+        <br>
+        <input type="number" name="age" id="number" placeholder="Age" min="14" max="90">
+        <br>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <br>
+        <select name="dropdown" id="dropdown">
+          <option value="" disabled selected>Select your current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="part-time-job">Part Time Job</option>
+          <option value="uncertain">Prefer not to say</option>
+        </select>
+        <br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" id="defintly" name="recommend" value="defently">
+        <label for="defintly">Definitely</label><br>
+        <input type="radio" id="maybe" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="not-sure" name="recommend" value="not-sure">
+        <label for="not-sure">Not sure</label>
+      </form>
+    </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
